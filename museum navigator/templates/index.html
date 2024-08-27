@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search</title>
-    <style>
-        body {
+<style>
+    body {
   width: 100%;
   height: 100%;
   --s: 200px;
@@ -28,13 +28,31 @@
   background-size: var(--s) calc(var(--s) * 0.577);
 }
 
-.form-container {
-  max-width: 400px;
-  height: 300px;
+.container {
+  max-width: fit-content;
+  height: fit-content;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 10px;
   box-sizing: border-box;
+  padding: 20px 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-container {
+  max-width: 400px;
+  height: 300px;
+  background-color: #fff;
+  padding: 20px 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro-container {
+  max-width: 400px;
+  height: auto;
+  background-color: #fff;
   padding: 20px 30px;
   margin-left: auto;
   margin-right: auto;
@@ -77,24 +95,36 @@
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-h1 {
-    color: #FFAA00;
-    font-size:10vw;
-    text-shadow: 5px 5px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+
+h1{
+    color: black;
     text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+p{
+    color: black;
+    text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        word-wrap: normal;
 }
     </style>
 </head>
 <body>
-    <h1>Welcome to Museum Navigator</h1>
-    <p></p>
- <div class="form-container">
-      <p class="title">Welcome back</p>
+    <div class="container">
+        <div class="intro-container">
+        <h1>Welcome to MuseoGuide</h1>
+        <p>MuseoGuide is an innovative digital companion designed to enhance the experience of museum visitors from around the world. This intelligent navigator breaks language and cultural barriers, making museums accessible and enjoyable for everyone, regardless of their origin or language proficiency. MuseoGuide offers translations of exhibit descriptions and interactive maps. It features an immersive audio guide with multilingual support, providing insightful commentary on exhibits, historical context, and cultural significance.</p>
+        </div>
+    <div class="form-container">
+      <p class="title">Search</p>
       <form class="form">
         <input type="text" class="input" placeholder="Place">
         <input type="text" class="input" placeholder="Code">
         <button class="form-btn">Submit</button>
       </form>
     </div>
+</div>
 </body>
 </html>
