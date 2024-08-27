@@ -29,13 +29,15 @@
 }
 
 .form-container {
-  width: 350px;
+  max-width: 400px;
   height: 300px;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 10px;
   box-sizing: border-box;
   padding: 20px 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .title {
@@ -75,23 +77,21 @@
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-
-.form-btn:active {
-  box-shadow: none;
+h1 {
+    color: #FFAA00;
+    font-size:10vw;
+    text-shadow: 5px 5px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+    text-align: center;
 }
     </style>
 </head>
 <body>
+    <h1>Welcome to Museum Navigator</h1>
+    <p></p>
  <div class="form-container">
       <p class="title">Welcome back</p>
       <form class="form">
-        <label for="places">Choose a place:</label>
-
-        <select name="places" id="places">
-          <option value="museum_1">museum #1</option>
-          <option value="museum_2">museum #2</option>
-        </select> 
-        <input type="text" class="input" placeholder="Name">
+        <input type="text" class="input" placeholder="Place">
         <input type="text" class="input" placeholder="Code">
         <button class="form-btn">Submit</button>
       </form>
