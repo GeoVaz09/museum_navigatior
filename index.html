@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+<style>
+    body {
+  width: 100%;
+  height: 100%;
+  --s: 200px;
+  --c1: #1d1d1d;
+  --c2: #4e4f51;
+  --c3: #3c3c3c;
+
+  background: repeating-conic-gradient(
+        from 30deg,
+        #0000 0 120deg,
+        var(--c3) 0 180deg
+      )
+      calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+    repeating-conic-gradient(
+      from 30deg,
+      var(--c1) 0 60deg,
+      var(--c2) 0 120deg,
+      var(--c3) 0 180deg
+    );
+  background-size: var(--s) calc(var(--s) * 0.577);
+}
+
+.container {
+  max-width: fit-content;
+  height: fit-content;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 20px 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-container {
+  max-width: 400px;
+  height: 300px;
+  background-color: #fff;
+  padding: 20px 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro-container {
+  max-width: 400px;
+  height: auto;
+  background-color: #fff;
+  padding: 20px 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 10px 0 30px 0;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 15px;
+}
+
+.input {
+  border-radius: 20px;
+  border: 1px solid #c0c0c0;
+  outline: 0 !important;
+  box-sizing: border-box;
+  padding: 12px 15px;
+}
+
+.form-btn {
+  padding: 10px 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border-radius: 20px;
+  border: 0 !important;
+  outline: 0 !important;
+  background: teal;
+  color: white;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+h1{
+    color: black;
+    text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+p{
+    color: black;
+    text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        word-wrap: normal;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="intro-container">
+        <h1>Welcome to MuseoGuide</h1>
+        <p>MuseoGuide is an innovative digital companion designed to enhance the experience of museum visitors from around the world. This intelligent navigator breaks language and cultural barriers, making museums accessible and enjoyable for everyone, regardless of their origin or language proficiency. MuseoGuide offers translations of exhibit descriptions and interactive maps. It features an immersive audio guide with multilingual support, providing insightful commentary on exhibits, historical context, and cultural significance.</p>
+        </div>
+    <div class="form-container">
+      <p class="title">Search</p>
+      <form class="form">
+        <input type="text" class="input" placeholder="Place" id="place">
+        <input type="text" class="input" placeholder="Code" id="code">
+        <button class="form-btn" onclick="search()">Search</button>
+      </form>
+    </div>
+</div>
+<script>
+   function search() {
+    event.preventDefault();
+    var place = document.getElementById("place").value;
+    var code = document.getElementById("code").value;
+    window.location.replace("http://192.168.0.108:80/" + place + "/" + code);
+}
+</script>
+</body>
+</html>
