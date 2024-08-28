@@ -19,5 +19,5 @@ Right now there are two museums in English with one exhibit each:
 </ul>
 <p>* I would add some images of statues but I don;t know how</p>
 
-<h2>Disclaimer:</h2>
-<p>The videos on the site are not mine. I don't know if I am allowed to use them! So if someone knows, please write.</p>
+<h2>Disclaimer!!!</h2>
+<p>The videos on the site are not mine. I don't know if I am allowed to use them. So if someone knows, please send me a message!</p>
