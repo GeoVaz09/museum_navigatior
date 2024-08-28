@@ -9,6 +9,6 @@ def index():
 
 @app.route("/<museum_name>/<code>")
 def pages(museum_name, code):
-    return render_template(f"/{museum_name}/{code}.html")
+    return render_template(f"/{museum_name}/{code}.html", name=museum_name , code=code)
 
 app.run(host='0.0.0.0',port=80,debug=True)

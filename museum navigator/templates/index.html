@@ -120,11 +120,19 @@ p{
     <div class="form-container">
       <p class="title">Search</p>
       <form class="form">
-        <input type="text" class="input" placeholder="Place">
-        <input type="text" class="input" placeholder="Code">
-        <button class="form-btn">Submit</button>
+        <input type="text" class="input" placeholder="Place" id="place">
+        <input type="text" class="input" placeholder="Code" id="code">
+        <button class="form-btn" onclick="search()">Search</button>
       </form>
     </div>
 </div>
+<script>
+   function search() {
+    event.preventDefault();
+    var place = document.getElementById("place").value;
+    var code = document.getElementById("code").value;
+    window.location.replace("http://192.168.0.108:80/" + place + "/" + code);
+}
+</script>
 </body>
 </html>
