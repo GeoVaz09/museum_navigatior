@@ -12,12 +12,13 @@
 <p>Imagine you walk into the museum and open MuseoGuide on your smartphone. You type the name of the museum, "Museum_1" into the search bar. As you approach a stunning stuatue, you notice a small code next to the exhibit. You enter "5634" into the designated field on MuseoGuide. You tap the "Search" button, and instantly, detailed information about the statues appears on your screen. MuseoGuide translates the description into your preferred language, providing insights into the artist's background and the statue's significance. With your headphones on, you listen to a detailed audio guide that explains the historical context and cultural importance of the statue. As you move through the museum, MuseoGuide helps you navigate and enriches your understanding of each exhibit, making your visit memorable and enjoyable.</p>
 
 <h2>Now is time to try it!</h2>
+<p>Go to <a href="https://geovaz09.github.io/museum_navigatior/" >Homepage</a></p>
 Right now there are two museums in English with one exhibit each:
 <ul>
   <li><strong>You can type:</strong> museum_1 and 5634 to learn about Athena</li>
   <li><strong>You can type:</strong> museum_2 and 9734 to learn about Zeus</li>
 </ul>
-<p>* I would add some images of statues but I don;t know how</p>
+<p>* I would add some images of statues but I don't know how</p>
 
 <h2>Disclaimer!!!</h2>
 <p>The videos on the site are not mine. I don't know if I am allowed to use them. So if someone knows, please send me a message!</p>
